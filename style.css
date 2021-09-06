@@ -1,0 +1,15 @@
+*
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-image: url('1244978.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: white;
+}
