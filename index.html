@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/code.js"></script>
+    <script src="js/code.js" defer></script>
+    <link rel="stylesheet" href="css/reset.css">
+
     <link rel="stylesheet" href="css/style.css">
     <title>WELCOME</title>
 </head>
@@ -12,23 +14,28 @@
 
     <header> 
         <h1>Astronomy Picture Of The Day</h1>
+        <img src="logo.png" class="logo">
 
-        <p>Descubra como estava os cosmos em qualquer data que você selecionar!</p>
     </header>
 
     <form>
-        <h2>Escolha uma data abaixo:</h2>
-        <input type="date" id="date">
+        <h3 class="intro">Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Start by choosing a date right below:</h3>
+        <input type="date" id="date" class="date">
 
-        <button type="submit" id="input">Let's go!</button>
+        
     </form>
 
-    <article>
-        <title id="title"></title>
-        <p id="text"></p>
-    </article>
 
-    <img class="imagemday"> 
-    
+    <div class="button"></div>
+         <button type="submit" id="input" >Discover!</button>
+    </div>    
+
+
+    <div id="information" class="info"></div>
+
+    <footer class="footer">
+        <h6 class="footer">Projeto realizado para fins educacionas -  Thais Silveira</p>
+        <h6 class="footer">Resilia Educação -  2021</p>
+    </footer>
 </body>
 </html>
