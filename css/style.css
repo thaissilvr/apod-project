@@ -1,15 +1,12 @@
 body {
-
-    background-image: url('1244978.jpg'); 
-    background-size: cover;
-    color: white;
-   
+ background-image: url('1244978.jpg'); 
+ background-size: cover;
+ color: white;
 }
 header {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 h1 {
     font-size: 50px;
@@ -67,13 +64,15 @@ button:hover {
     
 }
 
-h2 {
-    padding: 10px;
-    font-size: 30px;
-    font-weight: bold;
+div {
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
-p {
+h2,p {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
     padding: 30px;
     font-size: 20px;
 }
@@ -95,31 +94,45 @@ iframe {
     padding: 10px;
     text-align: center;
     font-weight: bold;
-    
+   
 }
 
 
 @media (max-width: 700px) {
 body {
-    width: 300px;
+    width: fit-content;
+    height: fit-content;
+    background-size:auto;
+
 }
  div, .intro {
+    font-size: 20px;
+    padding: 15px;
     width: fit-content;
     height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 10px;
-   
- }
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
- div > p {
-    font-size: 15px;
-    padding: 4px;
-    margin: 4px;
- }
+h1 {
+    font-size: 25px;
+}
+
+ 
 img, iframe {
     width: 200px;
     height: 200px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 }
