@@ -19,13 +19,27 @@ async function getData (date) {
 }
 
 function showInfo(info) {
-div.innerHTML += `<h2>${info.title} (${info.date})</h2>`
-div.innerHTML += `<p>${info.explanation}</p>`
+
+
+
+div.style.boxSizing = 'content-box'
+div.style.background = 'rgb(99, 129, 212, .5)'
+div.style.border = '5px solid white'
+div.style.borderRadius = '4px'
+/*div.style.marginRight = '200px'
+div.style.marginLeft = '200px'*/
+div.style.display = 'flex'
+div.style.flexDirection = 'row'
+div.style.justifyContent = 'space-around'
+div.style.flexWrap = 'wrap'
+
 
 if (info.media_type === 'image') {
- div.innerHTML =  `<img src= "${info.url}">`
+ div.innerHTML =  `<h2>${info.title} (${info.date})</h2> <p>${info.explanation}</p> <img src= "${info.url}"> `
+ 
 
 } else if (info.media_type === 'video') { 
-    div.innerHTML = `<iframe src=${info.url}></iframe>`
+    div.innerHTML = `<h2>${info.title} (${info.date})</h2> <p>${info.explanation}</p> <iframe src=${info.url}></iframe>`
+    
 }    
 }
